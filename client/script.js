@@ -6,7 +6,7 @@ const messageInput = document.getElementById('message-input')
 
 const ip = '10.151.1.50'
 
-const socket = io(`http://${ip}:3000`);
+const socket = io(`http://${ip}:3000`)
 
 socket.on('connect', () => {
   display_user_profile(socket.id)
@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault()
   const msg = messageInput.value
   if (msg === '')
-    return;
+    return
   let id = socket.id.substring(0, 6)
   display_self_msg(`${id}: ${msg}`)
   socket.emit('send-msg', msg, id)
