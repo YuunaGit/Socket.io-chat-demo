@@ -1,4 +1,4 @@
-const ip = '10.151.1.50'
+const ip = 'xxx.xxx.xxx.xxx'
 
 const io = require('socket.io')(3000, {
   cors: {
