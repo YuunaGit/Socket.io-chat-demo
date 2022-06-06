@@ -1,24 +1,22 @@
 # socket.io-chat-demo
- 
-## Start the demo
 
-### /client/script.js and /server/server.js
+## /client/script.js and /server/server.js
 
 set const ip = 'xxx.xxx.xxx.xxx'
 
-### /server
+## /server
 
 ```
 npm i
 npm start
 ```
 
-### /client
+## /client
 
 ```
 npm i
 npm run dev
 ```
 
-http://xxx.xxx.xxx.xxx:8080
+open http://xxx.xxx.xxx.xxx:8080
 
