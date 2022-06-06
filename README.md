@@ -20,3 +20,5 @@ npm i
 npm run dev
 ```
 
+http://xxx.xxx.xxx.xxx:8080
+
