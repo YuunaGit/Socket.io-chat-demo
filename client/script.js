@@ -4,7 +4,7 @@ const profile = document.getElementById('user-id')
 const form = document.getElementById('form')
 const messageInput = document.getElementById('message-input')
 
-const ip = '10.151.1.50'
+const ip = 'xxx.xxx.xxx.xxx'
 
 const socket = io(`http://${ip}:3000`)
 
