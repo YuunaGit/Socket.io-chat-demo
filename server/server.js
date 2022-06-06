@@ -10,7 +10,7 @@ const io = require('socket.io')(3000, {
 
 io.on('connection', (socket) => {
   socket.on('send-msg', (msg, user_id) => {
-    socket.broadcast.emit('receive-msg', msg, user_id);
+    socket.broadcast.emit('get-msg', msg, user_id);
   })
 
   socket.on('disconnect', () => {
@@ -28,6 +28,6 @@ function return_online_list() {
     items.forEach(item => {
       user_id_list.push(item.substring(0, 6))
     })
-    io.emit('receive-online-list', user_id_list)
+    io.emit('get-online-list', user_id_list)
   })
 }
